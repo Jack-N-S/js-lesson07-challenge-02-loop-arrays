@@ -18,5 +18,11 @@ for (var language of programmingLanguages) {
 };
 
 programmingLanguages.forEach(function (language, index) {
-  console.log(`${index + 1}. ${language.toUpperCase()}`);
+  //console.log(`${index + 1}. ${language.toUpperCase()}`);
 });
+
+
+var updatedLanguages = programmingLanguages.filter(function (item) {
+  return item.includes("y");
+});
+console.log(updatedLanguages);
